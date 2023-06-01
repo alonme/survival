@@ -29,6 +29,7 @@ SEXP survfitkm(SEXP y2, SEXP weight2,  SEXP sort12, SEXP sort22,
     double km, nelson;  /* current estimates */
 
     /* map the input data */
+    printf("survfitkm 1");
     ny = ncols(y2);     /* 2= ordinary survival 3= start,stop data */
     nused = nrows(y2);
     if (ny==3) { 
